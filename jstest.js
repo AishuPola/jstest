@@ -99,7 +99,7 @@ console.log(mergeOrders(orders)); // Should print the original array of orders
 function getDishNamesByIds(orders, ...id) {
   const getid = orders.map((id) => {
     let getdishes = orders.find((ids) => ids.id == id);
-    return getdishes?.disheNames ?? "unknown dish";
+    return getdishes?.dishNames ?? "unknown dish";
   });
 
   return getid;
