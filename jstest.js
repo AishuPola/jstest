@@ -70,9 +70,11 @@ console.log(getHighRatedDishes(orders));
 // 🍔 Slice and Map Dish Names
 
 //2. Write a function that slices the first N dishes from the orders array, maps their names, and joins them into a single string.
-
-function getFirstNDishNames(orders,id){
-    const
+function getFirstNDishNames(orders, n) {
+  return orders
+    .slice(0, n)
+    .map(order => order.dish)
+    .join(", ");
 }
 console.log(getFirstNDishNames(orders, 3));
 // // Should print: "Burger, Pizza, Sushi"
