@@ -94,13 +94,7 @@ console.log(mergeOrders(orders)); // Should print the original array of orders
 // 4.Write a function that accepts multiple order IDs, fetches the dish names, and returns a formatted string using the
 // rest operator, nullish coalescing, and template literals.
 
-// function getMovieTitlesByIds(...id) {
-//     let getid = id.map((id) => {
-//       let getmovie = movies.find((movie) => movie.id == id);
-//       return getmovie?.title ?? "unknown title";
-//     });
-//     return `selectedMovies:${getid}`;
-//   }
+
 
 function getDishNamesByIds(orders, ...id) {
   const getid = orders.map((id) => {
